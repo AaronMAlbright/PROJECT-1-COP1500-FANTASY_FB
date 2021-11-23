@@ -4,8 +4,10 @@
 # A fantasy manager has to select between players on his team to start
 # ----- Start decision is heavily based upon position and points scored
 # points are calculated by compiling football stats from the real life game
+import random
+import math
+
 def main():
-    import math
     game = "fantasy football "
     program = "Score calculator and Start/Sit Decision program"
     print(" Hello " * 2, "! Welcome to the " + game.capitalize() + program, ":",
@@ -123,7 +125,6 @@ def main():
                else:
                    return
         elif user_choice == 2:
-            import math
             def find_average_points(points):
                 sum_of_points = sum(points)
                 total_players = len(points)
